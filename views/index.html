@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<body>
+    <h1>Hola</h1>
+    <div id="message"></div>
+    <script src="../socket.io/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://' + location.host);
+        //var socket = io.connect('http://localhost:1337');
+
+        //console.log(socket);
+        ////socket.socket.on('error', function (reason) {
+        ////    console.error('Unable to connect Socket.IO', reason);
+        ////});
+        //var socket = io();
+        socket.on('message', function (msg) {
+            console.log(msg);
+            document.getElementById("message").innerHTML = msg;
+        });
+    </script>
+</body>
+</html>

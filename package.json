@@ -1,0 +1,19 @@
+{
+  "name": "webapp",
+  "version": "0.0.0",
+  "description": "WebApp",
+  "main": "server.js",
+  "author": {
+    "name": "Juan"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abatta/gxpushservice.git"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "socket.io": "^1.5.0"
+  }
+}
